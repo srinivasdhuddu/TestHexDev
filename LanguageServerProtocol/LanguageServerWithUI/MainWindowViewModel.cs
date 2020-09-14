@@ -149,7 +149,8 @@ namespace LanguageServerWithUI
         }
 
         public void SendDiagnostics()
-        {
+        { 
+
             var diagnosticTags = Tags.ToDictionary((d) => d.Text, (d) => d.Severity);
             this.languageServer.SetDiagnostics(diagnosticTags);
             this.languageServer.SendDiagnostics();
