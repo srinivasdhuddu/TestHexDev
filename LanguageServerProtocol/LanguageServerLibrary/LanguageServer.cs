@@ -55,6 +55,7 @@ namespace LanguageServer
         {
             this.textDocument = messageParams.TextDocument;
             
+
             SendDiagnostics();
         }
 
