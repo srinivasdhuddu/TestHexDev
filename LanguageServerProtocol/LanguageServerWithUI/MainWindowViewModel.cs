@@ -48,6 +48,7 @@ namespace LanguageServerWithUI
         {
             if (e.PropertyName.Equals("CurrentSettings"))
             {
+
                 this.CurrentSettings = this.languageServer.CurrentSettings;
             }
         }
@@ -150,7 +151,10 @@ namespace LanguageServerWithUI
 
         public void SendDiagnostics()
         { 
-
+            if(true)
+            {
+                //test
+            }
             var diagnosticTags = Tags.ToDictionary((d) => d.Text, (d) => d.Severity);
             this.languageServer.SetDiagnostics(diagnosticTags);
             this.languageServer.SendDiagnostics();
