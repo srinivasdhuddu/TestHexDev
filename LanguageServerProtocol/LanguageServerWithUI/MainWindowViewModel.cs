@@ -104,6 +104,7 @@ namespace LanguageServerWithUI
             }
             set
             {
+
                 this.responseText = value;
                 this.NotifyPropertyChanged(nameof(ResponseText));
             }
